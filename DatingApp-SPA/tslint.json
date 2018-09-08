@@ -133,6 +133,13 @@
         "multiline": "always",
         "singleline": "never"
       }
-    ]
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "grouped-imports": true
+      }
+    ],
+    "no-duplicate-imports": true
   }
 }
