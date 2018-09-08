@@ -96,6 +96,11 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          },
+          "configurations": {
+            "ci": {
+              "format": "prose"
+            }
           }
         }
       }
@@ -124,6 +129,11 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          },
+          "configurations": {
+            "ci": {
+              "format": "prose"
+            }
           }
         }
       }
