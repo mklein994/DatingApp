@@ -1,11 +1,7 @@
-root = true
-
+# Editor configuration, see http://editorconfig.org
 [*]
-charset = utf-8
 indent_size = 4
 indent_style = space
-insert_final_newline = true
-trim_trailing_whitespace = true
 
 # Xml project files
 [*.{csproj,vcxproj,vcxproj.filters,proj,nativeproj,locproj}]
@@ -23,18 +19,13 @@ indent_size = 2
 [*.{props,targets,config,nuspec}]
 indent_size = 2
 
-# Yaml files
-[*.y{,a}ml]
-indent_size = 2
-indent_style = space
-
-# JSON files
-[*.json]
+[*.{y{,a}ml,toml,json}]
 indent_size = 2
 indent_style = space
 
 # Shell scripts
 [*.sh]
 end_of_line = lf
+
 [*.{cmd, bat}]
 end_of_line = crlf
