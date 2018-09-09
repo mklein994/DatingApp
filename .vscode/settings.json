@@ -1,4 +1,5 @@
 {
   "prettier.requireConfig": true,
-  "html.format.endWithNewline": true
+  "html.format.endWithNewline": true,
+  "tslint.alwaysShowRuleFailuresAsWarnings": true
 }
