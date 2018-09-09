@@ -9,14 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ValueComponent implements OnInit {
   value: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   getValues() {
     this.http
       .get('http://localhost:5000/api/values')
-      .subscribe(values => this.value = values);
+      .subscribe(values => (this.value = values));
   }
 }
