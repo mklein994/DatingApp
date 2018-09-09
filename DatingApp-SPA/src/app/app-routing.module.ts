@@ -3,9 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ValueComponent } from './value/value.component';
 
-const routes: Routes = [
-  { path: 'values', component: ValueComponent },
-];
+const routes: Routes = [{ path: 'values', component: ValueComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
