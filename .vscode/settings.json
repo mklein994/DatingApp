@@ -1,5 +1,12 @@
 {
   "prettier.requireConfig": true,
   "html.format.endWithNewline": true,
-  "tslint.alwaysShowRuleFailuresAsWarnings": true
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "cSpell.words": [
+    "Dtos",
+    "HMACSHA",
+    "Hsts",
+    "hmac",
+    "repo"
+  ]
 }
