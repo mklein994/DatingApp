@@ -6,11 +6,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AuthService } from './_services/auth.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { ValueComponent } from './value/value.component';
 
 @NgModule({
-  declarations: [AppComponent, ValueComponent, NavComponent],
+  declarations: [AppComponent, ValueComponent, NavComponent, HomeComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [AuthService],
   bootstrap: [AppComponent],
