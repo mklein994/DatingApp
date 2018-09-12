@@ -9,16 +9,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
-import { ValueComponent } from './value/value.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ValueComponent,
-    NavComponent,
-    HomeComponent,
-    RegisterComponent,
-  ],
+  declarations: [AppComponent, NavComponent, HomeComponent, RegisterComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [AuthService],
   bootstrap: [AppComponent],
