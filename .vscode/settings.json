@@ -6,8 +6,9 @@
     "Dtos",
     "HMACSHA",
     "Hsts",
+    "favourite",
     "hmac",
-    "repo",
-    "injectable"
+    "injectable",
+    "repo"
   ]
 }
