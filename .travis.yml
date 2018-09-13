@@ -4,7 +4,6 @@ matrix:
       before_install:
         - cd DatingApp-SPA
       node_js:
-        - "lts/*"
         - "node"
       cache:
         directories:
