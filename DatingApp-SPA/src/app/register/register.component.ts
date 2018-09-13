@@ -8,9 +8,6 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  @Input()
-  valuesFromHome: any;
-
   @Output()
   cancelRegister = new EventEmitter();
 
