@@ -1,7 +1,7 @@
 matrix:
   include:
     - language: node_js
-      before_script:
+      before_install:
         - cd DatingApp-SPA
       node_js:
         - "lts/*"
@@ -19,7 +19,7 @@ matrix:
     - language: csharp
       mono: none
       dotnet: 2.1.401
-      before_script:
+      before_install:
         - cd DatingApp.API
       script:
         - dotnet build
