@@ -15,8 +15,6 @@ namespace DatingApp.API.Data
 
         public async Task<User> Login(string username, string password)
         {
-            throw new Exception("Computer says no!");
-
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Username == username);
 
             if (user == null)
