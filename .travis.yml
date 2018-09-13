@@ -1,0 +1,28 @@
+matrix:
+  include:
+    - language: node_js
+      before_script:
+        - cd DatingApp-SPA
+      node_js:
+        - "lts/*"
+        - "node"
+      cache:
+        directories:
+          - "~/.npm"
+          #- "node_modules"
+      script:
+        - npm run lint:ci
+        - npm run build:ci
+        # Ignore tests for now:
+        # - npm run test:ci
+
+    - language: csharp
+      mono: none
+      dotnet: 2.1.401
+      before_script:
+        - cd DatingApp.API
+      script:
+        - dotnet build
+
+notifications:
+  email: false
