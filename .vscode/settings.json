@@ -3,6 +3,7 @@
   "html.format.endWithNewline": true,
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "cSpell.words": [
+    "Dropdown",
     "Dtos",
     "HMACSHA",
     "Hsts",
