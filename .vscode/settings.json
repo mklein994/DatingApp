@@ -10,6 +10,7 @@
     "favourite",
     "hmac",
     "injectable",
-    "repo"
+    "repo",
+    "titlecase"
   ]
 }
