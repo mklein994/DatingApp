@@ -10,11 +10,22 @@ import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ListsComponent } from './lists/lists.component';
+import { MemberListComponent } from './member-list/member-list.component';
+import { MessagesComponent } from './messages/messages.component';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HomeComponent, RegisterComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    HomeComponent,
+    RegisterComponent,
+    MemberListComponent,
+    ListsComponent,
+    MessagesComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
