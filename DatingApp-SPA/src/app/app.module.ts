@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BsDropdownModule } from 'ngx-bootstrap';
 
+import { AuthGuard } from './_guards/auth.guard';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
@@ -33,7 +34,12 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     BsDropdownModule.forRoot(),
   ],
-  providers: [AuthService, AlertifyService, ErrorInterceptorProvider],
+  providers: [
+    AuthService,
+    AlertifyService,
+    ErrorInterceptorProvider,
+    AuthGuard,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
