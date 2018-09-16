@@ -7,7 +7,9 @@ import { User } from '../_models/user';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    Authorization: `Bearer ${localStorage.getItem('token')}`,
+    // Note that this cannot be string interpolation, since the token needs to
+    // be resolved before the string can be evaluated.
+    Authorization: 'Bearer ' + localStorage.getItem('token'),
   }),
 };
 
