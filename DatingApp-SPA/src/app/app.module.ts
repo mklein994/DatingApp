@@ -8,6 +8,7 @@ import { AuthGuard } from './_guards/auth.guard';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { UserService } from './_services/user.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -39,6 +40,7 @@ import { RegisterComponent } from './register/register.component';
     AlertifyService,
     ErrorInterceptorProvider,
     AuthGuard,
+    UserService,
   ],
   bootstrap: [AppComponent],
 })
