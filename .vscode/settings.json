@@ -12,6 +12,7 @@
     "hmac",
     "injectable",
     "repo",
-    "titlecase"
+    "titlecase",
+    "whitelisted"
   ]
 }
