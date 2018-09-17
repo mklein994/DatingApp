@@ -7,6 +7,7 @@ import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
 import { NgxGalleryModule } from 'ngx-gallery';
 
 import { AuthGuard } from './_guards/auth.guard';
+import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
@@ -64,6 +65,7 @@ export function tokenGetter() {
     AlertifyService,
     ErrorInterceptorProvider,
     AuthGuard,
+    PreventUnsavedChanges,
     UserService,
     MemberDetailResolver,
     MemberListResolver,
