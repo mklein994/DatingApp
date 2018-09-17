@@ -20,10 +20,11 @@ export class MemberDetailComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.loadUser();
+    this.route.data.subscribe(data => (this.user = data['user']));
   }
 
   // GET members/3
+  /*
   loadUser() {
     this.userService
       .getUser(+this.route.snapshot.params['id'])
@@ -32,4 +33,5 @@ export class MemberDetailComponent implements OnInit {
         error => this.alertify.error(error),
       );
   }
+  */
 }
