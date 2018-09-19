@@ -17,7 +17,7 @@ matrix:
 
     - language: csharp
       mono: none
-      dotnet: 2.1.401
+      dotnet: 2.1.402
       before_install:
         - cd DatingApp.API
       script:
