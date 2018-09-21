@@ -8,6 +8,7 @@
     "Dtos",
     "HMACSHA",
     "Hsts",
+    "Uploader",
     "alertify",
     "favourite",
     "hmac",
