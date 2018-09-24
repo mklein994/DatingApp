@@ -20,6 +20,9 @@ namespace DatingApp.API.Data
 
         public void Delete<T>(T entity) where T : class => _context.Remove(entity);
 
+        public async Task<Like> GetLike(int userId, int recipientId) =>
+            await _context.Likes.FirstOrDefaultAsync(u => u.LikerId == userId && u.LikeeId == recipientId);
+
         public async Task<Photo> GetMainPhotoForUser(int userId) =>
             await _context.Photos
                 .Where(u => u.UserId == userId)
