@@ -4,6 +4,7 @@
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "cSpell.words": [
     "Cloudinary",
+    "Datepicker",
     "Dropdown",
     "Dtos",
     "HMACSHA",
