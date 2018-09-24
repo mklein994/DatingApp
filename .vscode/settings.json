@@ -9,6 +9,7 @@
     "HMACSHA",
     "Hsts",
     "Uploader",
+    "Validators",
     "alertify",
     "favourite",
     "hmac",
