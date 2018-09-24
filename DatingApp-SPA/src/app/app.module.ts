@@ -7,6 +7,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 import {
   BsDatepickerModule,
   BsDropdownModule,
+  ButtonsModule,
   PaginationModule,
   TabsModule,
 } from 'ngx-bootstrap';
@@ -60,6 +61,7 @@ export function tokenGetter() {
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    ButtonsModule.forRoot(),
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
     PaginationModule.forRoot(),
