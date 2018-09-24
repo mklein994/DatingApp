@@ -10,6 +10,7 @@ import {
   TabsModule,
 } from 'ngx-bootstrap';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { TimeAgoPipe } from 'time-ago-pipe';
 
 import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
@@ -50,6 +51,7 @@ export function tokenGetter() {
     MemberDetailComponent,
     MemberEditComponent,
     PhotoEditorComponent,
+    TimeAgoPipe,
   ],
   imports: [
     BrowserModule,
