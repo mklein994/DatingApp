@@ -25,6 +25,7 @@ import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
 import { UserService } from './_services/user.service';
+import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -58,6 +59,7 @@ export function tokenGetter() {
     PhotoEditorComponent,
     TimeAgoPipe,
     MemberMessagesComponent,
+    AdminPanelComponent,
   ],
   imports: [
     BrowserModule,
