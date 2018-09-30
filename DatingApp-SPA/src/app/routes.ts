@@ -7,6 +7,7 @@ import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MessagesResolver } from './_resolvers/messages.resolver';
+import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { HomeComponent } from './home/home.component';
 import { ListsComponent } from './lists/lists.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
@@ -46,6 +47,10 @@ export const routes: Routes = [
         path: 'lists',
         component: ListsComponent,
         resolve: { users: ListsResolver },
+      },
+      {
+        path: 'admin',
+        component: AdminPanelComponent,
       },
     ],
   },
