@@ -14,6 +14,7 @@ import {
 import { NgxGalleryModule } from 'ngx-gallery';
 import { TimeAgoPipe } from 'time-ago-pipe';
 
+import { HasRoleDirective } from './_directives/has-role.directive';
 import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { ListsResolver } from './_resolvers/lists.resolver';
@@ -60,6 +61,7 @@ export function tokenGetter() {
     TimeAgoPipe,
     MemberMessagesComponent,
     AdminPanelComponent,
+    HasRoleDirective,
   ],
   imports: [
     BrowserModule,
