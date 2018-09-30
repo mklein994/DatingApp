@@ -8,6 +8,7 @@ import {
   BsDatepickerModule,
   BsDropdownModule,
   ButtonsModule,
+  ModalModule,
   PaginationModule,
   TabsModule,
 } from 'ngx-bootstrap';
@@ -80,6 +81,7 @@ export function tokenGetter() {
     BsDatepickerModule.forRoot(),
     PaginationModule.forRoot(),
     TabsModule.forRoot(),
+    ModalModule.forRoot(),
     NgxGalleryModule,
     FileUploadModule,
     JwtModule.forRoot({
